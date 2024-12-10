@@ -9,4 +9,4 @@ In this image we can see a few coding principles violated:
 
 2. Both authenticateUser and registerUser are using fatalError() to handle errors in runtime. This has to be changed because it will cause the app to close whenever it falls under the fatalError line. We must change the code in this case to handle errors succesfully and avoid causing the app to crash.
 
-3. Moved functions and classes to different files to avoid long codes
+3. Moved functions and classes to different files to separate database connections from the manager
